@@ -13,7 +13,7 @@ class Dish extends Component {
             const date = new Date(comment.date)
             const commentDate =
                 date.toLocaleString('en-us', {'month': 'short'}) + " " +
-                date.toLocaleString('en-us', {'day': 'numeric'}) + ", " +
+                date.toLocaleString('en-us', {'day': '2-digit'}) + ", " +
                 date.toLocaleString('en-us', {'year': 'numeric'})
             return (
                 <li key={comment.id}>
